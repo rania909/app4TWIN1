@@ -1,0 +1,9 @@
+<h1>Convertisseur</h1>
+<form class="form-group">
+<div>
+    <label>Valeur</label>
+    <input type="number" name="val" class="form-control" [(ngModel)]="valInput">
+</div>    
+</form>
+<!-- <app-to-euro-convert [val]="valInput" (event)="ChangeValue($event)"></app-to-euro-convert>  -->
+<h1>The received output Value:</h1>{{valOutput}}

@@ -17,6 +17,8 @@ import { ParentComponent } from './parent/parent.component';
 import { FilsComponent } from './fils/fils.component';
 import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
 import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
+import { ConvertisseurComponentComponent } from './convertisseur-component/convertisseur-component.component';
+import { ToEuroConvertComponentComponent } from './to-euro-convert-component/to-euro-convert-component.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
     ParentComponent,
     FilsComponent,
     ListInvoiceComponent,
-    EditInvoiceComponent
+    EditInvoiceComponent,
+    ConvertisseurComponentComponent,
+    ToEuroConvertComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConvertisseurComponentComponent } from './convertisseur-component/convertisseur-component.component';
 import { HomeComponent } from './home/home.component';
 import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
 import { ListuserComponent } from './listuser/listuser.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:"mainprovider", component:MainProviderComponent},
   {path:"login", component:LoginUserComponent},
   {path:"invoices", component:ListInvoiceComponent},
+  {path:"convert", component:ConvertisseurComponentComponent},
   {path:"**", component:NotFoundPageComponent}
 ];
 
