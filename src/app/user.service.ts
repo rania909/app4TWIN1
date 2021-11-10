@@ -1,43 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { User } from '../models/user';
-import { UserService } from '../user.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from './models/user';
 
-@Component({
-  selector: 'app-listuser',
-  templateUrl: './listuser.component.html',
-  styleUrls: ['./listuser.component.css'],
-  providers:[UserService] //lehna service disponible ken lel composant hedha 
+@Injectable({
+   providedIn: 'root'
 })
-export class ListuserComponent implements OnInit {
-   list : User[];
-   listInitiale : User[];
-   prop1="x";
-   prop2="testngmodel";
-   prop3="test";
-   searchval="test";
-  constructor(private uc:UserService,private ac:ActivatedRoute) { }
-  getVal(val:string){
-  
-    this.prop1=val;
-    console.log(this.prop1);
-  }
-
-  ngOnInit(): void {
-    //this.list=this.uc.getAllUsersFromDB();
-    this.uc.getAllUsersFromDB().subscribe(res=>{this.list=res;this.listInitiale=this.list;
-      this.ac.paramMap.subscribe(
-        res => {
-        console.log(res.get('cat')); 
-        this.list=this.listInitiale.filter((user) =>{
-           return user.accountCategory === res.get('cat');//return user.accountCategory === res.get('category')  ;
-        });
-      })
-    });
-    this.list=this.uc.getAllUsers();
-    this.listInitiale=this.uc.getAllUsers();
-    // this.ac.paramMap.subscribe(
-    //   res=>console.log(res.get('cat')));
+export class UserService {
+list:User[];
+  constructor(private _http:HttpClient) { }
+  getAllUsers(){
     this.list=[
       {
         idCustomer: 1,
@@ -98,21 +70,10 @@ export class ListuserComponent implements OnInit {
       
 
 ];
-this.listInitiale=this.list;
-     this.ac.paramMap.subscribe(
-      res => {
-      console.log(res.get('cat')); 
-      this.list=this.listInitiale.filter((user) =>{
-         return user.accountCategory === res.get('cat');//return user.accountCategory === res.get('category')  ;
-      });
-    })
-
+return this.list;
 
   }
-
-
-deleteUser(i:number){
-this.list.splice(i,1);
-console.log(this.list);
-}
+  getAllUsersFromDB():Observable<User[]>{
+ return this._http.get<User[]>("http://localhost:3000/users");
+  }
 }

@@ -19,6 +19,8 @@ import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
 import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
 import { ConvertisseurComponentComponent } from './convertisseur-component/convertisseur-component.component';
 import { ToEuroConvertComponentComponent } from './to-euro-convert-component/to-euro-convert-component.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './user.service';
 
 @NgModule({
   declarations: [
@@ -43,9 +45,11 @@ import { ToEuroConvertComponentComponent } from './to-euro-convert-component/to-
     BrowserModule,
     AppRoutingModule,
     FormsModule, //template driven : ngModel et ngForm
-    ReactiveFormsModule //formGroup, formControlName
+    ReactiveFormsModule, //formGroup, formControlName
+    HttpClientModule,
 
   ],
+  //providers: [UserService],//chnouma les services eli bech nestaamlouhom
   providers: [],
   bootstrap: [AppComponent]
 })
