@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConvertisseurComponentComponent } from './convertisseur-component/convertisseur-component.component';
 import { HomeComponent } from './home/home.component';
 import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
+import { ListproduitsComponent } from './listproduits/listproduits.component';
 import { ListuserComponent } from './listuser/listuser.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { MainProductComponent } from './main-product/main-product.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:"login", component:LoginUserComponent},
   {path:"invoices", component:ListInvoiceComponent},
   {path:"convert", component:ConvertisseurComponentComponent},
+  {path:"listproduit", component:ListproduitsComponent},
   {path:"**", component:NotFoundPageComponent}
 ];
 

@@ -21,6 +21,7 @@ import { ConvertisseurComponentComponent } from './convertisseur-component/conve
 import { ToEuroConvertComponentComponent } from './to-euro-convert-component/to-euro-convert-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './user.service';
+import { ListproduitsComponent } from './listproduits/listproduits.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserService } from './user.service';
     ListInvoiceComponent,
     EditInvoiceComponent,
     ConvertisseurComponentComponent,
-    ToEuroConvertComponentComponent
+    ToEuroConvertComponentComponent,
+    ListproduitsComponent
   ],
   imports: [
     BrowserModule,

@@ -21,50 +21,73 @@
   "profile": {
     "name": "typicode"
   },
-"users":[
-  {
-    "idCustomer": 1,
-    "firstName": "Mila",
-    "lastName": " Marwa",
-    "birthDate": "1999-06-30",
-    "accountCategory": "Admin",
-    "email": "mila@marwa.com",
-    "password": "test",
-    "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-    "profession": "Software Engineer"
-  },
-  {
-    "idCustomer": 2,
-    "firstName": "Noah",
-    "lastName": " Marwa",
-    "birthDate": "1999-06-30",
-    "accountCategory": "Admin",
-    "email": "mila@marwa.com",
-    "password": "test",
-    "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-    "profession": "Software Engineer"
-  },  {
-    "idCustomer": 3,
-    "firstName": "Anas",
-    "lastName": " Marwa",
-    "birthDate": "1999-06-30",
-    "accountCategory": "Admin",
-    "email": "anas@marwa.com",
-    "password": "test",
-    "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-    "profession": "Software Engineer"
-  },
-  {
-    "idCustomer": 4,
-    "firstName": "Asala",
-    "lastName": " Faleh",
-    "birthDate": "1999-06-30",
-    "accountCategory": "Admin",
-    "email": "Asala@faleh.com",
-    "password": "test",
-    "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
-    "profession": "Software Engineer"
-  }
-
-]
+  "users": [
+    {
+      "idCustomer": 1,
+      "firstName": "Mila",
+      "lastName": " Marwa",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "mila@marwa.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "idCustomer": 2,
+      "firstName": "Noah",
+      "lastName": " Marwa",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "mila@marwa.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "idCustomer": 3,
+      "firstName": "Anas",
+      "lastName": " Marwa",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "anas@marwa.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "idCustomer": 4,
+      "firstName": "Asala",
+      "lastName": " Faleh",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "Asala@faleh.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "code": "1568569",
+      "libelle": "95468",
+      "prixUnitaire": 25,
+      "tauxTVA": "46%"
+    },
+    {
+      "id": 2,
+      "code": "1561569",
+      "libelle": "968",
+      "prixUnitaire": 26,
+      "tauxTVA": "47%"
+    },
+    {
+      "id": 3,
+      "code": "1568569",
+      "libelle": "95468",
+      "prixUnitaire": 25,
+      "tauxTVA": "26%"
+    }
+  ]
 }
